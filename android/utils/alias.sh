@@ -1,4 +1,4 @@
-# A collection of alias to enhance android pentest
+# A collection of alias to enhance android pentest, bug bounty, research or reversing
 
 # drozer port foward
 alias dzfwd="adb forward tcp:31415 tcp:31415"
@@ -15,7 +15,3 @@ alias fsrv='adb shell su -c /data/local/tmp/frida 2>/dev/null 1>&2 &'
 # List processes from Apps current running from USB connected device   
 alias fpai='frida-ps -Ua'
 
-# Dump apks from a package name in a connected device
-dump_apk(){
-    adb shell pm path $1 | sed 's/package://' | while read pks; do adb pull $pks; done
-}
