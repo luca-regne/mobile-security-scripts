@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# WARNING:
+#   THE FOLLOWING LOGIC WAS IMPLEMENTED AND IMPROVED IN BATUTA PROJECT
+#   https://github.com/luca-regne/batuta
+
 # Script to pull all APKs (base + splits) from a connected Android device using adb
 # Usage: dump_apks.sh <filter>
 #   Example: dump_apks.sh "com.example.app" # Get a single app by its full package name
